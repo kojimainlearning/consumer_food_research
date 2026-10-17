@@ -1,0 +1,24 @@
+{
+    "Markers": [
+    ],
+    "connectionType": "bluetooth",
+    "demographics": {
+        "birthday": null,
+        "countryOfInfluence": {
+            "iso": "",
+            "printable": ""
+        },
+        "countryOfResidence": {
+            "iso": "",
+            "printable": ""
+        },
+        "gender": "U"
+    },
+    "exportApp": "com.emotiv.emotivpro",
+    "exportTime": "2026-09-10T17:22:18.405+08:00",
+    "headsetType": "EPOCX",
+    "mappings": null,
+    "montageType": "UNKNOWN",
+    "recordId": "d8ec0b76-5fb0-4658-bc02-c4cdfa71f08e",
+    "user": "5298"
+}

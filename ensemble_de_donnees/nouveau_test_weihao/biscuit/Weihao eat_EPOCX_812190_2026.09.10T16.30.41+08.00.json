@@ -1,0 +1,72 @@
+{
+    "Markers": [
+        {
+            "autoEndOnDisconnect": false,
+            "deleted": false,
+            "endDatetime": "2026-09-10T16:30:52.328582+08:00",
+            "extras": {
+            },
+            "index": 1,
+            "label": "Touch",
+            "originalEndDatetime": "2026-09-10T16:30:52.327982+08:00",
+            "originalStartDatetime": "2026-09-10T16:30:52.327982+08:00",
+            "port": "KeyStroke",
+            "startDatetime": "2026-09-10T16:30:52.328582+08:00",
+            "type": "instance",
+            "uuid": "6c6b8400-9106-4413-bc4c-19fb51350a41",
+            "value": 1
+        },
+        {
+            "autoEndOnDisconnect": false,
+            "deleted": false,
+            "endDatetime": "2026-09-10T16:31:06.336635+08:00",
+            "extras": {
+            },
+            "index": 2,
+            "label": "Chew",
+            "originalEndDatetime": "2026-09-10T16:31:06.332934+08:00",
+            "originalStartDatetime": "2026-09-10T16:31:06.332934+08:00",
+            "port": "KeyStroke",
+            "startDatetime": "2026-09-10T16:31:06.336635+08:00",
+            "type": "instance",
+            "uuid": "693260ab-3fc9-44ba-a894-198f499e8ae1",
+            "value": 2
+        },
+        {
+            "autoEndOnDisconnect": false,
+            "deleted": false,
+            "endDatetime": "2026-09-10T16:31:48.259286+08:00",
+            "extras": {
+            },
+            "index": 3,
+            "label": "Swallow",
+            "originalEndDatetime": "2026-09-10T16:31:48.261239+08:00",
+            "originalStartDatetime": "2026-09-10T16:31:48.261239+08:00",
+            "port": "KeyStroke",
+            "startDatetime": "2026-09-10T16:31:48.259286+08:00",
+            "type": "instance",
+            "uuid": "67fef156-d813-42cc-83f1-76bbafee5af6",
+            "value": 3
+        }
+    ],
+    "connectionType": "bluetooth",
+    "demographics": {
+        "birthday": null,
+        "countryOfInfluence": {
+            "iso": "",
+            "printable": ""
+        },
+        "countryOfResidence": {
+            "iso": "",
+            "printable": ""
+        },
+        "gender": "U"
+    },
+    "exportApp": "com.emotiv.emotivpro",
+    "exportTime": "2026-09-10T17:24:03.190+08:00",
+    "headsetType": "EPOCX",
+    "mappings": null,
+    "montageType": "UNKNOWN",
+    "recordId": "134fd47b-aab4-45d4-9d86-2d648a3b4066",
+    "user": "5298"
+}

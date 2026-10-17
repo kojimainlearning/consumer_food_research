@@ -1,0 +1,56 @@
+{
+    "Markers": [
+        {
+            "autoEndOnDisconnect": false,
+            "deleted": false,
+            "endDatetime": "2026-09-10T15:59:46.594926+08:00",
+            "extras": {
+            },
+            "index": 1,
+            "label": "Chew",
+            "originalEndDatetime": "2026-09-10T15:59:46.597370+08:00",
+            "originalStartDatetime": "2026-09-10T15:59:46.597370+08:00",
+            "port": "KeyStroke",
+            "startDatetime": "2026-09-10T15:59:46.594926+08:00",
+            "type": "instance",
+            "uuid": "e467baaf-8b4f-4f96-abd2-d80d60bc97a3",
+            "value": 2
+        },
+        {
+            "autoEndOnDisconnect": false,
+            "deleted": false,
+            "endDatetime": "2026-09-10T16:01:06.005101+08:00",
+            "extras": {
+            },
+            "index": 2,
+            "label": "Swallow",
+            "originalEndDatetime": "2026-09-10T16:01:06.001890+08:00",
+            "originalStartDatetime": "2026-09-10T16:01:06.001890+08:00",
+            "port": "KeyStroke",
+            "startDatetime": "2026-09-10T16:01:06.005101+08:00",
+            "type": "instance",
+            "uuid": "dd05f3e0-257f-4659-bcbe-fe9db5f9c0c0",
+            "value": 3
+        }
+    ],
+    "connectionType": "bluetooth",
+    "demographics": {
+        "birthday": null,
+        "countryOfInfluence": {
+            "iso": "",
+            "printable": ""
+        },
+        "countryOfResidence": {
+            "iso": "",
+            "printable": ""
+        },
+        "gender": "U"
+    },
+    "exportApp": "com.emotiv.emotivpro",
+    "exportTime": "2026-09-10T17:22:51.942+08:00",
+    "headsetType": "EPOCX",
+    "mappings": null,
+    "montageType": "UNKNOWN",
+    "recordId": "bcaff5ce-da72-455a-882a-e0c1059a0acf",
+    "user": "5298"
+}

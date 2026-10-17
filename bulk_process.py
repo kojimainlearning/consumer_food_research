@@ -16,31 +16,49 @@ HIGH_CUTOFF = 45.0
 EPOCH_LENGTH = 4.0
 EPOCH_OVERLAP = 2.0
 
+def load_eeg_data(file_path, verbose=False):
+    file_path = file_path if file_path != None or "" else "ensemble_de_donnees/eau/lkq_eau.edf"
+    raw_eeg = mne.io.read_raw_edf(file_path, preload=True, verbose=verbose)
 
-def load_eeg_data(file_path):
-    # Loads EDF data and ensures channels are named correctly
-    raw = mne.io.read_raw_edf(file_path, preload=True, verbose=False)
-    
-    # Emotiv EDFs sometimes have names like 'EEG AF3 - REF'. We clean them to 'AF3'.
     new_names = {}
     for ch in raw.ch_names:
         # Take the second word if it starts with 'EEG', otherwise keep it as is
         if "EEG" in ch:
             parts = ch.split()
             if len(parts) > 1:
-                new_names[ch] = parts[1] # e.g., 'AF3'
+                new_names[ch] = parts[1]
     
     if new_names:
         raw.rename_channels(new_names, verbose=False)
-        
-    # Keep only the 14 channels we need
-    raw.pick(EMOTIV_CHANNELS, verbose=False)
-    
-    # Set standard montage
+
+    eeg_channels = ["AF3", "F7", "F3", "FC5", "T7", "P7", "O1", "O2", "P8", "T8", "FC6", "F4", "F8", "AF4"]
+    raw_eeg.pick(eeg_channels, verbose=verbose)
+
     montage = mne.channels.make_standard_montage("standard_1020")
-    raw.set_montage(montage, verbose=False)
-    
-    return raw
+    raw_eeg.set_montage(montage, verbose=verbose)
+
+    return raw_eeg
+
+def bandpass_filter(raw_eeg, l_freq=LOW_CUTOFF, h_freq=HIGH_CUTOFF, verbose=False):
+    raw_filtered = raw_eeg.copy().filter(
+        l_freq=l_freq, 
+        h_freq=h_freq, 
+        fir_design="firwin", 
+        verbose=verbose)
+    return raw_filtered
+
+def noise_removal_using_ica(raw_filtered, ica_components, verbose=False):
+    ica = mne.preprocessing.ICA(n_components=ica_components, random_state=42, verbose=verbose, max_iter=1000)
+    ica.fit(raw_filtered)
+
+    eog_indices, _ = ica.find_bads_eog(raw_filtered, ch_name=['F7', 'F8'], verbose=verbose
+    muscle_indices, _ = ica.find_bads_muscle(raw_filtered, verbose=verbose)
+    ica.exclude = list(set(eog_indices + muscle_indices))
+
+    raw_clean = ica.apply(raw_filtered.copy(), verbose=verbose)
+
+    return raw_clean
+
 
 def process_eeg_data(raw):
     """
