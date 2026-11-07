@@ -1,0 +1,14 @@
+Green Tea
+Delicious 	- 7/10
+Happy 		- 7/10
+Calm 		- 7/10
+
+Chocolate:
+Delicious 	- 9/10
+Happy 		- 9/10
+Calm 		- 6/10
+
+Biscuit: 
+Delicious 	- 5/10
+Happy 		- 4/10
+Calm 		- 6/10

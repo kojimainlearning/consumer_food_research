@@ -1,0 +1,104 @@
+{
+    "Markers": [
+        {
+            "autoEndOnDisconnect": false,
+            "deleted": false,
+            "endDatetime": "2026-11-05T17:35:07.783935+08:00",
+            "extras": {
+            },
+            "index": 1,
+            "label": "Reach",
+            "originalEndDatetime": "2026-11-05T17:35:07.787681+08:00",
+            "originalStartDatetime": "2026-11-05T17:35:07.787681+08:00",
+            "port": "KeyStroke",
+            "startDatetime": "2026-11-05T17:35:07.783935+08:00",
+            "type": "instance",
+            "uuid": "0b4e64ca-9ad4-4c76-a5ca-f9831ce926ba",
+            "value": 1
+        },
+        {
+            "autoEndOnDisconnect": false,
+            "deleted": false,
+            "endDatetime": "2026-11-05T17:35:11.500672+08:00",
+            "extras": {
+            },
+            "index": 2,
+            "label": "Hold",
+            "originalEndDatetime": "2026-11-05T17:35:11.502697+08:00",
+            "originalStartDatetime": "2026-11-05T17:35:11.502697+08:00",
+            "port": "KeyStroke",
+            "startDatetime": "2026-11-05T17:35:11.500672+08:00",
+            "type": "instance",
+            "uuid": "c7b1ffaa-6feb-4116-8bc2-e03e6c202dc7",
+            "value": 2
+        },
+        {
+            "autoEndOnDisconnect": false,
+            "deleted": false,
+            "endDatetime": "2026-11-05T17:35:22.994446+08:00",
+            "extras": {
+            },
+            "index": 3,
+            "label": "Chew",
+            "originalEndDatetime": "2026-11-05T17:35:22.996245+08:00",
+            "originalStartDatetime": "2026-11-05T17:35:22.996245+08:00",
+            "port": "KeyStroke",
+            "startDatetime": "2026-11-05T17:35:22.994446+08:00",
+            "type": "instance",
+            "uuid": "82f6acff-fa4d-4d43-933b-cc7507fd64ca",
+            "value": 3
+        },
+        {
+            "autoEndOnDisconnect": false,
+            "deleted": false,
+            "endDatetime": "2026-11-05T17:36:03.519371+08:00",
+            "extras": {
+            },
+            "index": 4,
+            "label": "Swallow",
+            "originalEndDatetime": "2026-11-05T17:36:03.516127+08:00",
+            "originalStartDatetime": "2026-11-05T17:36:03.516127+08:00",
+            "port": "KeyStroke",
+            "startDatetime": "2026-11-05T17:36:03.519371+08:00",
+            "type": "instance",
+            "uuid": "8a035be8-af1b-4dc0-b0f8-db6fe536a130",
+            "value": 4
+        },
+        {
+            "autoEndOnDisconnect": false,
+            "deleted": false,
+            "endDatetime": "2026-11-05T17:36:21.868807+08:00",
+            "extras": {
+            },
+            "index": 5,
+            "label": "Post-Swallow",
+            "originalEndDatetime": "2026-11-05T17:36:21.870931+08:00",
+            "originalStartDatetime": "2026-11-05T17:36:21.870931+08:00",
+            "port": "KeyStroke",
+            "startDatetime": "2026-11-05T17:36:21.868807+08:00",
+            "type": "instance",
+            "uuid": "5420d36a-8e3c-4ad4-8a1e-2715915bc632",
+            "value": 5
+        }
+    ],
+    "connectionType": "bluetooth",
+    "demographics": {
+        "birthday": null,
+        "countryOfInfluence": {
+            "iso": "",
+            "printable": ""
+        },
+        "countryOfResidence": {
+            "iso": "",
+            "printable": ""
+        },
+        "gender": "U"
+    },
+    "exportApp": "com.emotiv.emotivpro",
+    "exportTime": "2026-11-07T14:45:28.360+08:00",
+    "headsetType": "EPOCX",
+    "mappings": null,
+    "montageType": "UNKNOWN",
+    "recordId": "50b1f983-29bd-4a8b-80e2-73833891914c",
+    "user": "5298"
+}
