@@ -64,7 +64,7 @@ def print_config_summary():
     print("[Config] Pipeline Configuration (14-Ch Emotiv EPOC X | Native CMS/DRL, No CAR)")
     print(f"  • Channels (14)   : {', '.join(EPOCX_CHANNELS)}")
     print(f"  • Frontal ROI     : {', '.join(EI_CHANNELS)}")
-    print(f"  • Passband & ASR  : {L_FREQ}–{H_FREQ} Hz (Notch {NOTCH_FREQ} Hz) | ASR k={ASR_CUTOFF_K}")
+    print(f"  • Passband & ASR  : {L_FREQ}–{H_FREQ} Hz (No Notch) | ASR k={ASR_CUTOFF_K}")
     print("=" * 78)
 
 
@@ -1043,6 +1043,7 @@ def run_dataset_folder_pipeline(dataset_root="ensemble_de_donnees", trial=False,
                 "PostClean_Delta_AB_FC": r_clean.get("Delta_Alpha_Beta_FC", np.nan),
                 "PostClean_AB_Post": r_clean.get("Alpha_Beta_Ratio_Post", np.nan),
                 "PostClean_EI": r_clean.get("Engagement_Index", np.nan),
+                "PostClean_Delta_EI": r_clean.get("Delta_Engagement_Index", np.nan),
                 "PostClean_FAA_F4_F3": r_clean.get("FAA_F4_F3", np.nan),
                 "PostClean_Delta_FAA_F4_F3": r_clean.get("Delta_FAA_F4_F3", np.nan),
                 "PostClean_FAA_AF4_AF3": r_clean.get("FAA_AF4_AF3", np.nan),
@@ -1072,7 +1073,8 @@ def run_dataset_folder_pipeline(dataset_root="ensemble_de_donnees", trial=False,
             cols = [
                 "Participant", "Condition", "Survey_Delicious", "Survey_Happy", "Survey_Calm",
                 "PostClean_FAA_F4_F3", "PostClean_Delta_FAA_F4_F3", "PostClean_FAA_vs_Water",
-                "PostClean_AB_FC", "PostClean_Delta_AB_FC", "PostClean_AB_vs_Water", "PostClean_EI",
+                "PostClean_AB_FC", "PostClean_Delta_AB_FC", "PostClean_AB_vs_Water",
+                "PostClean_EI", "PostClean_Delta_EI",
             ]
             print(df_cmp[cols].round(4).to_string(index=False))
             print("=" * 95)
