@@ -1,0 +1,120 @@
+
+--- Shapiro-Wilk Normality: PostClean_Delta_FAA_F4_F3 ---
+  eau       : W = 0.9454, p = 0.6652 (Normal)
+  the_vert  : W = 0.9308, p = 0.5231 (Normal)
+  biscuit   : W = 0.9284, p = 0.5015 (Normal)
+  chocolat  : W = 0.7826, p = 0.0186 (NON-NORMAL)
+  RM-ANOVA : F(3, 21) = 0.742, p = 0.5390
+  Friedman : chi2 = 4.950, p = 0.1755, Kendall's W = 0.206
+
+--- One-Sample Wilcoxon vs. 0: PostClean_Delta_FAA_F4_F3 ---
+Condition    Mean    SEM  Median    IQR    W  p_raw  p_BH_FDR  p_Bonferroni
+      eau -0.0069 0.0429  0.0245 0.1391 17.0 0.9453    0.9453        1.0000
+ the_vert  0.1079 0.0685  0.0895 0.1809  7.0 0.1484    0.5000        0.5938
+  biscuit  0.0412 0.1396  0.0413 0.2859 13.0 0.5469    0.7292        1.0000
+ chocolat -0.0383 0.0302 -0.0578 0.0444  9.0 0.2500    0.5000        1.0000
+
+--- Post-Hoc Pairwise Wilcoxon: PostClean_Delta_FAA_F4_F3 ---
+                Pair    W  p_raw  p_BH_FDR  p_Bonferroni
+     eau vs the_vert  7.0 0.1484    0.4453        0.8906
+      eau vs biscuit 14.0 0.6406    0.7687        1.0000
+     eau vs chocolat 13.0 0.5469    0.7687        1.0000
+ the_vert vs biscuit 17.0 0.9453    0.9453        1.0000
+the_vert vs chocolat  4.0 0.0547    0.3281        0.3281
+ biscuit vs chocolat 12.0 0.4609    0.7687        1.0000
+
+--- Shapiro-Wilk Normality: PostClean_Delta_AB_FC ---
+  eau       : W = 0.6880, p = 0.0016 (NON-NORMAL)
+  the_vert  : W = 0.9318, p = 0.5323 (Normal)
+  biscuit   : W = 0.6305, p = 0.0004 (NON-NORMAL)
+  chocolat  : W = 0.9230, p = 0.4548 (Normal)
+  RM-ANOVA : F(3, 21) = 1.364, p = 0.2809
+  Friedman : chi2 = 5.550, p = 0.1357, Kendall's W = 0.231
+
+--- One-Sample Wilcoxon vs. 0: PostClean_Delta_AB_FC ---
+Condition   Mean    SEM  Median    IQR    W  p_raw  p_BH_FDR  p_Bonferroni
+      eau 0.1427 0.0799  0.0978 0.0818  3.0 0.0391    0.0781        0.1562
+ the_vert 0.0662 0.1043  0.1323 0.2320 11.0 0.3828    0.3828        1.0000
+  biscuit 0.3705 0.1962  0.2536 0.1680  2.0 0.0234    0.0781        0.0938
+ chocolat 0.2670 0.1910  0.1901 0.5159  6.0 0.1094    0.1458        0.4375
+
+--- Post-Hoc Pairwise Wilcoxon: PostClean_Delta_AB_FC ---
+                Pair    W  p_raw  p_BH_FDR  p_Bonferroni
+     eau vs the_vert 16.0 0.8438    0.8438        1.0000
+      eau vs biscuit  4.0 0.0547    0.3281        0.3281
+     eau vs chocolat 10.0 0.3125    0.6250        1.0000
+ the_vert vs biscuit  7.0 0.1484    0.4453        0.8906
+the_vert vs chocolat 14.0 0.6406    0.7687        1.0000
+ biscuit vs chocolat 12.0 0.4609    0.6914        1.0000
+
+--- Shapiro-Wilk Normality: PostClean_Delta_EI ---
+  eau       : W = 0.9599, p = 0.8095 (Normal)
+  the_vert  : W = 0.7951, p = 0.0253 (NON-NORMAL)
+  biscuit   : W = 0.8644, p = 0.1328 (Normal)
+  chocolat  : W = 0.6223, p = 0.0003 (NON-NORMAL)
+  RM-ANOVA : F(3, 21) = 0.651, p = 0.5913
+  Friedman : chi2 = 0.300, p = 0.9600, Kendall's W = 0.012
+
+--- One-Sample Wilcoxon vs. 0: PostClean_Delta_EI ---
+Condition    Mean    SEM  Median    IQR    W  p_raw  p_BH_FDR  p_Bonferroni
+      eau -0.0865 0.0469 -0.1152 0.1398  6.0 0.1094    0.2188        0.4375
+ the_vert -0.0801 0.1055  0.0019 0.2058 16.0 0.8438    0.8438        1.0000
+  biscuit -0.0930 0.0416 -0.0843 0.0328  6.0 0.1094    0.2188        0.4375
+ chocolat  0.0806 0.2027 -0.0577 0.0991  9.0 0.2500    0.3333        1.0000
+
+--- Post-Hoc Pairwise Wilcoxon: PostClean_Delta_EI ---
+                Pair    W  p_raw  p_BH_FDR  p_Bonferroni
+     eau vs the_vert 15.0 0.7422    0.8438           1.0
+      eau vs biscuit 16.0 0.8438    0.8438           1.0
+     eau vs chocolat 14.0 0.6406    0.8438           1.0
+ the_vert vs biscuit 15.0 0.7422    0.8438           1.0
+the_vert vs chocolat 16.0 0.8438    0.8438           1.0
+ biscuit vs chocolat 15.0 0.7422    0.8438           1.0
+
+--- Shapiro-Wilk Normality: Survey_Delicious ---
+  the_vert  : W = 0.8659, p = 0.1375 (Normal)
+  biscuit   : W = 0.8148, p = 0.0411 (NON-NORMAL)
+  chocolat  : W = 0.8832, p = 0.2020 (Normal)
+  RM-ANOVA : F(2, 14) = 7.913, p = 0.0050
+  Friedman : chi2 = 10.571, p = 0.0051, Kendall's W = 0.661
+
+--- Post-Hoc Pairwise Wilcoxon: Survey_Delicious ---
+                Pair    W  p_raw  p_BH_FDR  p_Bonferroni
+ the_vert vs biscuit 10.0 1.0000    1.0000        1.0000
+the_vert vs chocolat  0.0 0.0312    0.0469        0.0938
+ biscuit vs chocolat  0.0 0.0078    0.0234        0.0234
+
+--- Shapiro-Wilk Normality: Survey_Happy ---
+  the_vert  : W = 0.9562, p = 0.7728 (Normal)
+  biscuit   : W = 0.7976, p = 0.0270 (NON-NORMAL)
+  chocolat  : W = 0.9116, p = 0.3657 (Normal)
+  RM-ANOVA : F(2, 14) = 5.640, p = 0.0160
+  Friedman : chi2 = 9.250, p = 0.0098, Kendall's W = 0.578
+
+--- Post-Hoc Pairwise Wilcoxon: Survey_Happy ---
+                Pair    W  p_raw  p_BH_FDR  p_Bonferroni
+ the_vert vs biscuit 17.0 1.0000    1.0000        1.0000
+the_vert vs chocolat  4.0 0.0547    0.0820        0.1641
+ biscuit vs chocolat  0.0 0.0078    0.0234        0.0234
+
+--- Shapiro-Wilk Normality: Survey_Calm ---
+  the_vert  : W = 0.8511, p = 0.0978 (Normal)
+  biscuit   : W = 0.7823, p = 0.0185 (NON-NORMAL)
+  chocolat  : W = 0.8774, p = 0.1780 (Normal)
+  RM-ANOVA : F(2, 14) = 2.038, p = 0.1671
+  Friedman : chi2 = 4.560, p = 0.1023, Kendall's W = 0.285
+
+--- Post-Hoc Pairwise Wilcoxon: Survey_Calm ---
+                Pair    W  p_raw  p_BH_FDR  p_Bonferroni
+ the_vert vs biscuit 10.0 0.5312    0.5312        1.0000
+the_vert vs chocolat  5.0 0.1875    0.3750        0.5625
+ biscuit vs chocolat  1.0 0.2500    0.3750        0.7500
+
+--- Frontal Alpha Power (Pre-Touch vs Post-Swallow) ---
+Condition  Median_%_Change    W  p_raw  p_BH_FDR  p_Bonferroni
+      eau           7.6931 11.0 0.3828    0.3828        1.0000
+ the_vert          26.7685  2.0 0.0234    0.0469        0.0938
+  biscuit          30.0446  7.0 0.1484    0.1979        0.5938
+ chocolat          30.7463  0.0 0.0078    0.0312        0.0312
+
+Spearman (Survey_Happy vs PostClean_Delta_FAA): rho = -0.537, p = 0.0068

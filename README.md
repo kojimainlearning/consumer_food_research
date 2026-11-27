@@ -16,6 +16,7 @@ All Python dependencies are listed in [requirements.txt](requirements.txt):
 - **Data Handling:** `pandas`
 - **Visualisation:** `matplotlib`
 - **Notebook Execution:** `jupyter`, `ipykernel`
+- **Statistical Calculation:** `statsmodels`
 
 Install them with:
 

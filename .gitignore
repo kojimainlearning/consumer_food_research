@@ -1,3 +1,5 @@
 # IDE Ignore Settings
 .idea/
+.ipynb_checkpoints/
+.vscode/
 *.iml
